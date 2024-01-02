@@ -1,0 +1,1126 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}   
+
+:root{
+    --accent: #ff9a62;
+    --white: #fff;
+    --gray: #f8f8f8;
+}
+
+/* heropage */
+
+.heropage{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(157, 148, 148, 0.5)), url(images/sunset.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    background: transparent;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: var(--white);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(42, 40, 37, 0.31);
+    transition: 0.5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: var(--white);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.headline{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    margin-top: 170px;
+}
+
+.title{
+    font-size: 150px;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.description{
+    font-size: 29px;
+}
+
+.callout{
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.5;
+}
+
+.callout:hover{
+    border-radius: 40px;
+    background-color: rgb(94, 129, 141);
+}
+
+.upanddown{
+    animation-name: scrolldown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*animation for up and down*/
+
+@keyframes scrolldown{
+    0%,100%{
+        margin-top: 80px;
+    }
+    50%{
+        margin-top: 90px;
+    }
+}
+
+/* Features */
+
+.features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.features h2{
+    font-size: 35px;
+    margin-top: 60px;
+    font-weight: 600;
+}
+
+.small-divider{
+    width: 10%;
+    border-top: 2px solid var(--accent);
+    margin-top: 20px;
+}
+
+.boxes{
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--gray);
+    height: 100%;
+    width: 315px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 30px;
+    transition: all 1s;
+}
+
+.box:hover{
+    padding: 60px;
+}
+
+.box h6{
+    font-size: 24px;
+}
+
+.box p{
+    font-size: 14px;
+}
+
+.divider{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    width: 90%;
+    border-top: 1px solid rgb(137, 137, 137);
+}
+
+/*Destinations*/
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.destinations h1{
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.destinations p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-boxes{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-box{
+    width: 427px;
+    height: 385px;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.overlap-1{
+    height: 385px;
+    background-image: linear-gradient(rgba(103, 98, 98, 0.5),
+     rgba(0, 0, 0, 0.5)), url(images/beach-huts.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 1s;
+}
+
+.overlap-2{
+    height: 385px;
+    background-image: linear-gradient(rgba(103, 98, 98, 0.5),
+     rgba(0, 0, 0, 0.5)), url(images/toho.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 1s;
+}
+
+.overlap-3{
+    height: 385px;
+    background-image: linear-gradient(rgba(103, 98, 98, 0.5),
+     rgba(0, 0, 0, 0.5)), url(images/81697a73ce1aabde74978fbe24cac635.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 1s;
+}
+
+.overlap-1:hover,.overlap-2:hover,.overlap-3:hover{
+    height: 450px;
+}
+
+.overlap-text{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    color: var(--white);
+}
+
+.overlap-text h5{
+    font-size: xx-large;
+}
+
+.overlap-text p{
+    font-size: large;
+}
+
+/* About */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.welcome h1{
+    font-size: 96px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome-subtext{
+    font-size: 24px;
+    width: 92%; /* Add this line */
+    margin: 0 auto; /* Add this line to center the element */
+}
+
+.button-2{
+    font-size: 24px;
+    width: 252px;
+    height: 52px;
+    background-color: var(--accent);
+    color: white;
+    border: 0;
+    border-radius: 16px;
+    position: relative;
+    margin-top: 40px;
+    transition: all 1s;
+}
+
+.button-2:hover{
+    color: black;
+    border: 1px black solid;
+    background-color: white;
+}
+
+
+.button-3{
+    font-size: 24px;
+    width: 252px;
+    height: 52px;
+    background-color: var(--accent);
+    color: white;
+    border: 0;
+    border-radius: 16px;
+    position: relative;
+    left: 400px;
+    margin-top: 60px;
+    transition: all 1s;
+}
+
+.button-3:hover{
+    color: black;
+    border: 1px black solid;
+    background-color: white;
+}
+
+.slide-photo{
+    display: inline-flex;
+    position: relative;
+    justify-content: center;
+}
+
+.slide-photo img{
+    position: relative;
+    width: 320px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.beyond-travel{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-top: 70px;
+    gap: 50px;
+}
+
+.beyond-travel h1{
+    font-size: 96px;
+    text-align: center;
+}
+
+.beyond-travel h2{
+    font-size: 48px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.beyond-travel p{
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.beyond-travel img{
+    width: 580px;
+    height: 423px;
+    margin-right: 20px;
+}
+
+/* Pricing */
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.pricing h1{
+    margin-top: 40px;
+    font-size: 50px;
+}
+
+.price-boxes{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.price-box{
+    width: 320px;
+    height: 500px;
+    padding: 50px;
+    border-radius: 50px;
+    transition: all 1s;
+}
+
+.price-box:hover{
+    border-radius: 0px;
+    padding: 55px;
+}
+
+.price-box h3{
+    font-size: 32px;
+}
+
+.price-box h4{
+    font-size: 24px;
+    opacity: 60%;
+}
+
+.price-box hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.basic-description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.basic-description-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.basic-description-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.basic-description-text{
+    text-align: left;
+    margin-top: 10px;
+    opacity: 80%;
+}
+
+.know-more h2{
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.button-4{
+    width: 280px;
+    height: 70px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-4:hover{
+    background-color: black;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*Loved Holidays Destinations*/
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container h2{
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 2s ease;
+    color: white;
+    font-size: x-large;
+    padding: 60px; 
+    font-weight: bold;
+}
+
+.box-2:hover h2{
+    opacity: 1;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--gray);
+    height: 400px;
+    width: 45%;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 30px;
+    transition: all 1s;
+    position: relative;
+}
+
+.box-2:hover{
+    padding: 60px;
+    cursor: pointer;
+}
+
+.box-text {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 2s ease;
+    color: white;
+    font-size: large;
+    padding: 60px; 
+}
+
+.box-2:hover .box-text {
+    opacity: 1;
+}
+
+.villa{
+    background-image: url("images/Modern-Holiday-Villa-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.villa:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(32, 31, 31, 0.5)), url(images/Modern-Holiday-Villa-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.disney{
+    background-image: url("images/1161579.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.disney:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(32, 31, 31, 0.5)), url("images/1161579.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rome{
+    background-image: url("images/R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rome:hover{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(32, 31, 31, 0.5)), url("images/R.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.new-york{
+    background-image: url("images/sol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.new-york:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(32, 31, 31, 0.5)), url("images/sol.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.egypt{
+    background-image: url("images/pri.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.egypt:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(32, 31, 31, 0.5)), url("images/pri.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sydney{
+    background-image: url("images/16232589363_5f304643a1_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sydney:hover{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+     rgba(32, 31, 31, 0.5)), url("images/16232589363_5f304643a1_b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contact */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact h1{
+    font-size: 96px;
+}
+
+.contact img{
+    width: 870px;
+    height: 357px;
+    border-radius: 20px;
+}
+
+.button-5{
+    width: 436px;
+    height: 91px;
+    font-size: 36px;
+    border-radius: 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-5:hover{
+    border-radius: 32px;
+}
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    color: var(--white);
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.contact-info-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.socials{
+    display: flex;
+    gap: 20px;
+}
+
+.socials i:hover{
+    opacity: 90%;
+    cursor: pointer;
+}
+
+/* Media Queries For Phones */
+
+@media (max-width: 586px){
+    .checkbtn{
+        display: block;
+    }
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 80px;
+        transition: all 0.5s;
+        text-align: center;
+        background-color: #222529;
+        padding-left: 0px;
+        z-index: 1;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .title{
+        font-size: 70px;
+    }
+
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box{
+        width: 250px;
+        padding: 30px;
+    }
+
+    .image-boxes{
+        flex-direction: column;
+    }
+
+    .image-box{
+        width: 280px;
+        height: 299px;
+    }
+
+    .overlap-1,
+    .overlap-2,
+    .overlap-3{
+        width: 280px;
+    }
+
+    .overlap-text{
+        top: 200px;
+    }
+
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome h1{
+        font-size: 40px;
+    }
+
+    .welcome-subtext p{
+        font-size: 14px;
+        text-align: left;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .welcome-subtext .button-2{
+        left: 0px;
+        margin-top: 13px;
+    }
+
+    .slide-photo img{
+        width: 90px;
+        height: 300px;
+    }
+
+    .beyond-travel{
+        flex-direction: column;
+    }
+
+    .beyond-travel-text{
+        text-align: center;
+    }
+
+    .beyond-travel-text h1{
+        font-size: 32px;
+    }
+
+    .beyond-travel-text h2{
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .beyond-travel-text p{
+        font-size: 13px;
+        text-align: left;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .beyond-travel .button-3{
+        position: relative;
+        left: 0px;
+        margin-top: 15px;
+    }
+
+    .beyond-travel img{
+        position: relative;
+        width: 98%;
+        height: 60%;
+    }
+
+    .pricing h1{
+        font-size: 30px;
+    }
+
+    .pricing p{
+        font-size: 13px;
+    }
+
+    .price-boxes{
+        flex-direction: column;
+    }
+
+    .price-box{
+        width: 310px;
+        padding:20px;
+    }
+
+    .price-box:hover{
+        padding: 21px;
+    }
+
+    .price-box:hover{
+        padding:21px;
+    }
+
+    .price-box h3{
+        font-size: 24px;
+    }
+
+    .price-box h4{
+        font-size: 16px;
+        opacity: 60%;
+    }
+
+    .contact h1{
+        font-size:60px;
+    }
+
+    .contact img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .button-5{
+        width: 310px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: self-start;
+        gap:20px;
+    }
+}
+
+/* Media Queries For Tablets */
+
+@media (max-width: 768px){
+    .checkbtn{
+        display: block;
+    }
+
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 80px;
+        transition: all 0.5s;
+        text-align: center;
+        background-color: #222529;
+        padding-left: 0px;
+        z-index: 1;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+
+    .title{
+        font-size: 70px;
+    }
+
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box{
+        width: 270px;
+        padding: 30px;
+    }
+
+    .image-boxes{
+        flex-direction: column;
+    }
+
+    .image-box{
+        width: 300px;
+        height: 299px;
+    }
+
+    .overlap-1,
+    .overlap-2,
+    .overlap-3{
+        width: 300px;
+    }
+
+    .overlap-text{
+        top: 200px;
+    }
+
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome h1{
+        font-size: 40px;
+    }
+
+    .welcome-subtext p{
+        font-size: 14px;
+        text-align: left;
+        padding: 0px 8px 0px 8px;
+    }
+
+    .welcome-subtext .button-2{
+        left: 0px;
+        margin-top: 13px;
+    }
+
+    .slide-photo img{
+        width: 70px;
+    }
+
+    .beyond-travel{
+        flex-direction: column;
+    }
+
+    .beyond-travel-text{
+        text-align: center;
+    }
+
+    .beyond-travel-text h1{
+        font-size: 32px;
+    }
+
+    .beyond-travel-text h2{
+        font-size: 24px;
+        font-weight: normal;
+    }
+
+    .beyond-travel-text p{
+        font-size: 13px;
+        text-align: left;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .beyond-travel .button-3{
+        position: relative;
+        left: 0px;
+        margin-top: 15px;
+    }
+
+    .beyond-travel img{
+        position: relative;
+        width: 98%;
+        height: 60%;
+    }
+
+    .pricing h1{
+        font-size: 30px;
+    }
+
+    .pricing p{
+        font-size: 13px;
+    }
+
+    .price-boxes{
+        flex-direction: column;
+    }
+
+    .price-box{
+        width: 270px;
+    }
+
+    .price-box:hover{
+        padding: 21px;
+    }
+
+    .price-box:hover{
+        padding:21px;
+    }
+
+    .price-box h3{
+        font-size: 24px;
+    }
+
+    .price-box h4{
+        font-size: 16px;
+        opacity: 60%;
+    }
+
+    .contact h1{
+        font-size:60px;
+    }
+
+    .contact img{
+        width: 300px;
+        height: 150px;
+    }
+
+    .button-5{
+        width: 310px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: self-start;
+        gap:20px;
+    }
+}
+
+/* Media Queries For Laptops */
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .boxes{
+        flex-direction: column;
+    }
+
+    .image-boxes{
+        flex-direction: column;
+    }
+
+    .welcome{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .slide-photo img{
+        width: 200px;
+    }
+
+    .beyond-travel{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .price-boxes{
+        flex-direction: column;
+    }
+        
+}
