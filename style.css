@@ -10,10 +10,15 @@
     --gray: #f8f8f8;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
 /* heropage */
 
 .heropage{
-    min-width: 100%;
+    min-width: 100vw;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
      rgba(157, 148, 148, 0.5)), url(images/sunset.webp);
@@ -24,14 +29,14 @@
 nav{
     background: transparent;
     height: 80px;
-    width: 100%;
+    width: 100vw;
 }
 
 label.logo{
     color: var(--white);
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 20px;
     font-weight: bold;
 }
 
@@ -370,13 +375,14 @@ a:hover{
 .beyond-travel p{
     font-size: 24px;
     margin-top: 30px;
+    margin-left: 20px;
     text-align: center;
 }
 
 .beyond-travel img{
     width: 580px;
     height: 423px;
-    margin-right: 20px;
+    margin-right: 70px;
 }
 
 /* Pricing */
@@ -843,6 +849,7 @@ a:hover{
 
     .beyond-travel img{
         position: relative;
+        margin: auto;
         width: 98%;
         height: 60%;
     }
@@ -921,7 +928,7 @@ a:hover{
 
     ul{
         position: fixed;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         left: -100%;
         top: 80px;
@@ -1000,7 +1007,7 @@ a:hover{
     }
 
     .slide-photo img{
-        width: 70px;
+        width: 80px;
     }
 
     .beyond-travel{
@@ -1071,6 +1078,48 @@ a:hover{
         opacity: 60%;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        width: 170vw;
+        gap: 30px;
+        margin-left: 2px;
+    }
+
+    .box-2:hover{
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .box-text:hover{
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .box-2 h2:hover{
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .box-2 h2{
+        display: relative;
+        top: 10%;
+    }
+
+    .box-2 p{
+        padding: 30px;
+        cursor: pointer;
+    }
+
+    .new-york{
+        background-image: url("images/sol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
     .contact h1{
         font-size:60px;
     }
@@ -1090,6 +1139,10 @@ a:hover{
         flex-direction: column;
         align-items: self-start;
         gap:20px;
+    }
+
+    .footer-socials .foot {
+        width: 100vw
     }
 }
 
@@ -1119,8 +1172,29 @@ a:hover{
         text-align: center;
     }
 
+    .beyond-travel .button-3{
+        position: relative;
+        left: 0px; 
+    }
+
+    .beyond-travel img{
+        margin-right: 0px;
+    }
+
     .price-boxes{
         flex-direction: column;
     }
+
+    .new-york{
+        background-image: url("images/sol.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    .box-2{
+        padding: 5px;
+    }
         
 }
+
